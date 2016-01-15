@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $(".form").submit(function(event) {
 
-    var rogueHeroInput = $("input[name=rogueHero]:checked").val();
+    var characterInput = $("input#character").val();
     // var smuggleFighterInput = $("input[name=smuggleFighter]:checked").val();
 
     var luke = 0;
     var han = 0;
 
-    if (rogueHeroInput === "rogue") {
+    if (characterInput === "rogue") {
        han += 1;
     } else {
         luke += 1;
